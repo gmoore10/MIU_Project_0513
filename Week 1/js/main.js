@@ -1,6 +1,6 @@
 // Project 1
 // Mobile Interfaces and Usability
-// VFW 0513
+// MiU 0413
 // By: Garrett Moore
 
 //Wait until the DOM is read.
@@ -288,7 +288,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     //Set up list of people that we will be assigning to-do's to.
-    var toDoAssignees = ["--Choose Staff Member--", "Jim", "Kim"];
+    var toDoAssignees = ["--Choose Staff Member--", "James Makowski", "Sarah Slegona", "Garrett Moore", "Josh Huffine", "Andrew Mund"];
     createAssigneeList();
     errorList = $$('errorList');
 
