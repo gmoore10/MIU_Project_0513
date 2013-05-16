@@ -21,10 +21,10 @@
                 <h1>To-Do List</h1>
             </div>
             <div data-role="content">
-                <a href="additem.html">
+                <a href="additem.html" data-ajax="false">
                     <img src="img/feature.png" style="margin-bottom: 3px;" />
                 </a><br />
-                <div id="divSearch" class="divSection">
+                <!--<div id="divSearch" class="divSection">
                     <div id="divSearchHeader" class="divHeader">Search</div>
                     <ul>
                         <li>
@@ -32,7 +32,7 @@
                             <input type="button" value="Search" style="width: 70px; height: 29px; top: 1px; position: relative;" />
                         </li>
                     </ul>
-                </div>
+                </div>-->
                 <div id="divBrowse" class="divSection">
                     <div id="divBrowseHeader" class="divHeader">Browse To-Do's By</div>
                             <div class="divBrowseItem">
@@ -53,18 +53,175 @@
                    </div>
             </div>
             <div data-role="footer" data-position="fixed">
-                <h4>Footer</h4>
+                <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#items" data-icon="star">To-Do's</a></li>
+                    <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                </ul>
+            </div>
             </div>
         </div>
-        <div data-role="page" id="about">
+        <div data-role="page" id="about" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
                 <h1>About</h1>
             </div>
             <div data-role="content">
-                New Page.
+                <ul data-role="listview" data-inset="true" data-filter="true">
+                    <li><a href="../gold/index.html" data-ajax="false">Gold App</a></li>
+                    <li><a href="../bronze/index.html" data-ajax="false">Bronze App</a></li>
+                    <li><a href="https://github.com/gmoore10/MIU_Project_0513/" data-ajax="false">Github Repo</a></li>
+                    <li><a href="http://gmoore10.github.io/MIU_Project_0513/Week%202/gold/index.html" data-ajax="false">Gold gh-pages</a></li>
+                    <li><a href="http://gmoore10.github.io/MIU_Project_0513/Week%202/bronze/index.html">Bronze gh-pages</a></li>
+                </ul>
             </div>
             <div data-role="footer" data-position="fixed">
-                <h4>Footer</h4>
+                <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#items" data-icon="star">To-Do's</a></li>
+                    <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                </ul>
+                    </div>
+            </div>
+        </div>
+        <div data-role="page" id="items" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Items</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-filter="true">
+                    <li><a href="#item1">Item 1</a></li>
+                    <li><a href="#item2">Item 2</a></li>
+                    <li><a href="#item3">Item 3</a></li>
+                    <li><a href="#item4">Item 4</a></li>
+                    <li><a href="#item5">Item 5</a></li>
+                </ul>
+                <!--FOR BRONZE APP-->
+                <!--<div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapse="true">
+                        <h3>Item 1</h3>
+                        <p>Item 1 Description</p>
+                    </div>
+                    <div data-role="collapsible" data-collapse="true">
+                        <h3>Item 2</h3>
+                        <p>Item 2 Description</p>
+                    </div>
+                    <div data-role="collapsible" data-collapse="true">
+                        <h3>Item 3</h3>
+                        <p>Item 3 Description</p>
+                    </div>
+                    <div data-role="collapsible" data-collapse="true">
+                        <h3>Item 4</h3>
+                        <p>Item 4 Description</p>
+                    </div>
+                    <div data-role="collapsible" data-collapse="true">
+                        <h3>Item 5</h3>
+                        <p>Item 5 Description</p>
+                    </div>
+                </div>-->
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="item1" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Item 1</h1>
+            </div>
+            <div data-role="content">
+                Item 1
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="item2" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Item 2</h1>
+            </div>
+            <div data-role="content">
+                Item 2
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="item3" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Item 3</h1>
+            </div>
+            <div data-role="content">
+                Item 3
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="item4" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Item 4</h1>
+            </div>
+            <div data-role="content">
+                Item 4
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="item5" data-add-back-btn="true">
+            <div data-role="header" data-position="fixed">
+                <h1>Item 5</h1>
+            </div>
+            <div data-role="content">
+                Item 5
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#items" data-icon="star">To-Do's</a></li>
+                        <li><a href="additem.html" data-icon="add" data-ajax="false">Add</a></li>
+                        <li><a href="#about" data-icon="info">About</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
