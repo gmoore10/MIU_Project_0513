@@ -14,38 +14,58 @@
         <title>Assignable To-Do List</title>
     </head>
     <body>
-        <h1>Assignable To-Do List</h1>
         <!--<p>A mobile app that stores to-do list items that can be re-assignable to others
         as it is worked on.</p>-->
-        <a href="additem.html">
-            <img src="img/feature.png" style="margin-bottom: 3px;" />
-        </a><br />
-        <div id="divSearch" class="divSection">
-            <div id="divSearchHeader" class="divHeader">Search</div>
-            <ul>
-                <li>
-                    <input type="text" style="width: 66%;" id="txtSearch" />&nbsp;
-                    <input type="button" value="Search" style="width: 70px; height: 29px; top: 1px; position: relative;" />
-                </li>
-            </ul>
+        <div data-role="page" id="home">
+            <div data-role="header" data-position="fixed">
+                <h1>To-Do List</h1>
+            </div>
+            <div data-role="content">
+                <a href="additem.html">
+                    <img src="img/feature.png" style="margin-bottom: 3px;" />
+                </a><br />
+                <div id="divSearch" class="divSection">
+                    <div id="divSearchHeader" class="divHeader">Search</div>
+                    <ul>
+                        <li>
+                            <input type="text" style="width: 66%;" id="txtSearch" />&nbsp;
+                            <input type="button" value="Search" style="width: 70px; height: 29px; top: 1px; position: relative;" />
+                        </li>
+                    </ul>
+                </div>
+                <div id="divBrowse" class="divSection">
+                    <div id="divBrowseHeader" class="divHeader">Browse To-Do's By</div>
+                            <div class="divBrowseItem">
+                                <a href="404.html">Name</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
+                            </div>
+                            <div class="divBrowseItem">
+                                <a href="404.html">Creator</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
+                            </div>
+                            <div class="divBrowseItem">
+                                <a href="404.html">Assigned To</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
+                            </div>
+                            <div class="divBrowseItem">
+                                <a href="404.html">Due Date</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
+                            </div>
+                            <div class="divBrowseItem">
+                                <a href="404.html">Priority</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
+                            </div>
+                   </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h4>Footer</h4>
+            </div>
         </div>
-        <div id="divBrowse" class="divSection">
-            <div id="divBrowseHeader" class="divHeader">Browse To-Do's By</div>
-                    <div class="divBrowseItem">
-                        <a href="404.html">Name</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
-                    </div>
-                    <div class="divBrowseItem">
-                        <a href="404.html">Creator</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
-                    </div>
-                    <div class="divBrowseItem">
-                        <a href="404.html">Assigned To</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
-                    </div>
-                    <div class="divBrowseItem">
-                        <a href="404.html">Due Date</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
-                    </div>
-                    <div class="divBrowseItem">
-                        <a href="404.html">Priority</a><span><a href="404.html"><span style="float: right;"><img src="img/button.png" /></span></a></span>
-                    </div>
+        <div data-role="page" id="about">
+            <div data-role="header" data-position="fixed">
+                <h1>About</h1>
+            </div>
+            <div data-role="content">
+                New Page.
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h4>Footer</h4>
+            </div>
         </div>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
