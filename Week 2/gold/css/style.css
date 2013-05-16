@@ -108,11 +108,11 @@ input {
     text-decoration: none;
 }
 
-#divBrowse ul li span {
+/*#divBrowse ul li span {
     float: right; 
     right: 10px; 
     position: relative;
-}
+}*/
 
 #liFirstItem {
     color: #000000;

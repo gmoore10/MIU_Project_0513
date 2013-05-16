@@ -5,6 +5,18 @@
     background-repeat: no-repeat;
 }
 
+#home .ui-grid-a div {
+    text-align: center;
+}
+
+#home .ui-grid-a .ui-bar {
+    padding: 10px 0px;
+}
+
+#home .ui-grid-a .ui-bar h5 {
+    font-size: 10pt;
+}
+
 h1 {
     color: #666666;
     font-family: Arial, sans-serif;
