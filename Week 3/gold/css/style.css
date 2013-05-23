@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
 }
 
+label.error {
+    display: block;
+    margin: 10px 0px;
+    color: red;
+}
+
 h1 {
     color: #666666;
     font-family: Arial, sans-serif;
