@@ -20,15 +20,16 @@
             <a href="additem.html" id="linkAddNew" style="display: none;">Add New To-Do</a>
         </div>
         <form action="#" method="post" id="toDoForm">
+            <input type="button" id="btnSubmit" value="Save To-Do" /> * Required
             <div id="divYourName" class="divSection">
                 <div id="divYourNameHeader" class="divHeader">Your Name</div>
                 <ul>
                     <li>
-                        <label for="firstname">First Name </label><br />
+                        <label for="firstname">First Name* </label><br />
                         <input type="text" id="firstname" />
                     </li>
                     <li>
-                        <label for="lastname">Last Name </label><br />
+                        <label for="lastname">Last Name* </label><br />
                         <input type="text" id="lastname" />
                     </li>
                 </ul>
@@ -38,19 +39,22 @@
                 <div id="div2" class="divHeader">To-Do Content</div>
                 <ul>
                     <li>
-                        <label for="toDoName">To-Do Name </label><br />
+                        <label for="toDoName">To-Do Name* </label><br />
                         <input type="text" id="toDoName" />
+                        <br /><span class="inputhint">Descriptive Name of To-Do</span>
                     </li>
                     <li>
                         <label for="dtDue">Due Date</label><br />
                         <input type="date" id="dtDue" />
+                        <br /><span class="inputhint">Enter Date in MM/DD/YYYY format</span>
                     </li>
                     <li id="select">
-                        <label for="assignedto">Assigned To: </label><br />
+                        <label for="assignedto">Assigned To*: </label><br />
                     </li>
                     <li>
                         <label for="rngPriority">Priority</label><br />
                         <input type="range" id="rngPriority" />
+                        <br /><span class="inputhint">Pick number between 1 and 100</span>
                     </li>
                     <li>
                         <label for="txtContent">Content</label><br /><textarea id="txtContent"></textarea>
@@ -63,7 +67,6 @@
                         <input type="hidden" value="external" />
                     </li>
                 </ul>
-                <input type="button" id="btnSubmit" value="Save To-Do" />
             </div>
         </form>
         <script src="js/json.js" type="text/javascript"></script>
