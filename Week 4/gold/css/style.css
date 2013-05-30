@@ -5,6 +5,14 @@
     background-repeat: no-repeat;
 }
 
+.logo {
+    float:left;
+    display:inline;
+    position: absolute;
+    top: 5px; 
+    left: 5px;
+}
+
 label.error {
     display: block;
     margin: 10px 0px;
@@ -12,7 +20,6 @@ label.error {
 }
 
 h1 {
-    color: #666666;
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 20pt;
