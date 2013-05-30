@@ -9,15 +9,17 @@
         <meta name="MobileOptimized" content="320" />
         <meta name="viewport" content="user-scalable=no, width=device-width" />
         <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <link rel="stylesheet" href="css/themes/gmoore_bronze.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
         <script src="js/libs/modernizr.custom.min.js"></script>
         <title>Assignable To-Do List</title>
     </head>
     <body>
         <!--<p>A mobile app that stores to-do list items that can be re-assignable to others
         as it is worked on.</p>-->
-        <div data-role="page" id="home">
+        <div data-role="page" id="home" data-theme="a">
             <div data-role="header" data-position="fixed">
+                <img src="img/Logo.png" alt="" class="logo"/>
                 <h1>To-Do List</h1>
             </div>
             <div data-role="content">
@@ -31,8 +33,8 @@
                 </div>
                 <div id="divBrowse" class="divSection">
                     <div id="divBrowseHeader" class="divHeader">Browse To-Do's By</div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><div class="ui-bar ui-bar-c"><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><h5>Name</h5></div></div>
+                    <div class="ui-grid-a" data-theme="a">
+                        <div class="ui-block-a" data-theme="a"><div class="ui-bar ui-bar-c" data-theme="a"><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><h5>Name</h5></div></div>
                         <div class="ui-block-b"><div class="ui-bar ui-bar-c"><span class="ui-icon ui-icon-back ui-icon-shadow">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><h5>Creator</h5></div></div>
                         <div class="ui-block-a"><div class="ui-bar ui-bar-c"><span class="ui-icon ui-icon-forward ui-icon-shadow">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><h5>Assigned To</h5></div></div>
                         <div class="ui-block-b"><div class="ui-bar ui-bar-c"><span class="ui-icon ui-icon-grid ui-icon-shadow">&nbsp;&nbsp;&nbsp;&nbsp;</span><br /><h5>Due Date</h5></div></div>
@@ -58,8 +60,9 @@
             </div>
             </div>
         </div>
-        <div data-role="page" id="about" data-add-back-btn="true">
+        <div data-role="page" id="about">
             <div data-role="header" data-position="fixed">
+                <img src="img/Logo.png" alt="" class="logo"/>
                 <h1>About</h1>
             </div>
             <div data-role="content">
@@ -82,8 +85,9 @@
                     </div>
             </div>
         </div>
-        <div data-role="page" id="items" data-add-back-btn="true">
+        <div data-role="page" id="items">
             <div data-role="header" data-position="fixed">
+                <img src="img/Logo.png" alt="" class="logo"/>
                 <h1>Items</h1>
             </div>
             <div data-role="content">
